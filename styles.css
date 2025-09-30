@@ -32,4 +32,16 @@ form{
     flex-direction: column;
 }
 
- 
+.button-1{
+    text-align: right;
+}
+ .button{
+    text-align: center;
+ }
+
+ #output{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+ }

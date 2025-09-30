@@ -1,17 +1,17 @@
 const form = document.getElementById('Form');
 const birthDate = document.getElementById('birthDate');
-const gender = getElementById('gender');
-const output = getElementById('output');
+const gender = document.getElementById('gender');
+const output = document.getElementById('output');
 
 //Akan name arrays
 const maleNames = ["Kwasi" , "Kwadwo" , "Kwabena" , "Kwaku", "Yaw", "Kofi" , "Kwame"];
 const femaleNames = ["Akosua" , "Adwoa" , "Abenaa" , "Akua" , "Yaa" , "Afua" , "Ama"];
 
-form.addEventListener('Get Name', function(e) {
+form.addEventListener('submit', function(e) {
     e.preventDefault(); 
 
 //Input values
-const dateValue = birthDate.ariaValueMax;
+const dateValue = birthDate.value;
 const genderValue = gender.value;
 
 //convert string date to object and get day of week
@@ -28,5 +28,5 @@ if (genderValue === "Male"){
     }
 
     //Result 
-    output.textContent = 'Your Akan name is: ${akanName}';
+    output.textContent = `Your Akan name is: ${akanName}`;
 });

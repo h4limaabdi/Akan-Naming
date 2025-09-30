@@ -32,9 +32,6 @@ form{
     flex-direction: column;
 }
 
-.button{
-    text-align: right;
-}
  .button{
     text-align: center;
  }

@@ -4,33 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.o">
         <title>Akan Namimg System</title>
-        <link rel="stylesheet" href="AKAN/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <script src="AKAN/java.js" defer></script>
     </head>
     <body>
-        <h1>Akan Naming System</h1>
+        <h1 class="title">Akan Naming System</h1>
         <!-- Form -->
-         <form id="nameForm">
+         <form id="Form">
+
+            <div class="Register">
 
             <!--Birthdate-->
+            <div class="input">
             <label for="birthDate">Enter your Date of Birth</label>
             <input type="date" id="birthDate" required>
+            </div>
 
             <!--Gender-->
+            <div class="input">
             <label for="gender">Select your gender</label>
             <select id="gender" required>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
+            </div>
+
+            </div>
+
+            <!--Reset Button-->
+            <button class="button" type="reset">Reset</button>
 
             <!--Submit form-->
-            <button type="submit">Get Name</button>
-            <!--Reset Button-->
-            <button type="reset">Reset</button>
+            <button class="button" type="submit">Get Name</button>
 
          </form>
 
          <!--Name Output-->
          <div id="output"></div>
+         
     </body>
 </html>
